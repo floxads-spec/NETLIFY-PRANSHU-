@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080910">
+<title>VIP CHANNEL EXPERT</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080910;color:#fff;font-family:'Poppins',sans-serif}
+a{-webkit-tap-highlight-color:transparent}
+.bg{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 15%,#733ae52b,transparent 50%),radial-gradient(ellipse at 90% 65%,#09c9ef20,transparent 50%)}
+.bg:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff04 1px,transparent 1px),linear-gradient(90deg,#ffffff04 1px,transparent 1px);background-size:48px 48px}
+.wrap{width:min(1080px,100%);margin:auto;padding:0 22px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 0;border-bottom:1px solid #ffffff0d}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.5px}
+.avatar{width:43px;height:43px;border-radius:50%;object-fit:cover;object-position:center;border:2px solid #a78bfa}
+.nav-btn{color:#d8c8ff;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #a78bfa40;border-radius:30px;padding:9px 15px;background:#a78bfa0b}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:50px;align-items:center;padding:80px 0 65px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #a78bfa35;border-radius:30px;color:#d1beff;background:#a78bfa0c;font-size:10px;font-weight:600;letter-spacing:1.6px}
+.dot{width:6px;height:6px;background:#bda1ff;border-radius:50%;box-shadow:0 0 12px #bda1ff}
+h1{font-size:clamp(42px,6vw,73px);line-height:1.08;letter-spacing:-2.5px;margin:22px 0 19px;font-weight:800}
+.gradient{background:linear-gradient(110deg,#c8b2ff,#8edfff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.gold{color:#f4c542}
+.lead{font-size:14px;color:#a7a9bc;line-height:1.85;max-width:450px;margin:0 0 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;padding:17px 25px;border-radius:14px;background:linear-gradient(110deg,#9162f5,#6146e5);color:#fff;text-decoration:none;font-size:14px;font-weight:700;box-shadow:0 10px 35px #8355e530;transition:transform .25s,box-shadow .25s}
+.btn svg{width:21px;height:21px;flex-shrink:0}
+.btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#ffffff25 50%,transparent 65%);transform:translateX(-150%);animation:shine 5s infinite}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px #8355e550}
+.btn:focus-visible,.nav-btn:focus-visible{outline:3px solid #c8b2ff;outline-offset:5px}
+.note{display:flex;gap:16px;flex-wrap:wrap;color:#9295aa;font-size:10px;margin-top:18px}
+.note span:before{content:"✓";color:#bda1ff;margin-right:5px}
+.art{position:relative;display:grid;place-items:center;padding:32px 0}
+.art:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:#8255e530;filter:blur(65px);animation:breathe 6s ease-in-out infinite}
+.portrait{width:280px;height:280px;border-radius:50%;padding:8px;border:1px solid #a78bfa60;background:#ffffff05;position:relative;animation:float 6s ease-in-out infinite;box-shadow:0 0 0 18px #a78bfa05,0 0 0 40px #a78bfa03}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;display:block}
+.vip{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#15121e;border:1px solid #f4c54255;color:#f4c542;white-space:nowrap;border-radius:30px;padding:9px 22px;font-size:12px;font-weight:700;letter-spacing:2px}
+.art-tag{position:absolute;right:0;top:35px;background:#12121e;border:1px solid #ffffff15;border-radius:12px;padding:11px 15px;font-size:11px;color:#ddd0ff;box-shadow:0 12px 30px #0005}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #ffffff10;border-radius:18px;background:#ffffff03;padding:22px 12px}
+.strip div{text-align:center;border-right:1px solid #ffffff10}
+.strip div:last-child{border:0}
+.strip strong{display:block;color:#d1beff;font-size:17px;font-weight:600}
+.strip small{display:block;color:#85899e;font-size:10px;margin-top:5px}
+section{padding:65px 0}
+.center{text-align:center}
+.eyebrow{font-size:10px;letter-spacing:2px;font-weight:600;color:#bda1ff}
+h2{font-size:clamp(25px,4vw,37px);line-height:1.3;letter-spacing:-1px;margin:12px 0}
+.sub{font-size:13px;line-height:1.8;color:#969aae;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}
+.card{padding:25px 22px;border:1px solid #ffffff10;border-radius:18px;background:linear-gradient(145deg,#ffffff05,#ffffff01);transition:transform .3s,border-color .3s,background .3s}
+.card:hover{transform:translateY(-6px);border-color:#a78bfa65;background:#a78bfa08}
+.icon{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;background:#a78bfa12;color:#c9b0ff;font-size:19px}
+h3{font-size:15px;margin:16px 0 9px;font-weight:600}
+.card p{font-size:12px;color:#9599af;line-height:1.8;margin:0}
+.join-box{position:relative;overflow:hidden;border:1px solid #a78bfa30;border-radius:24px;padding:40px 22px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#8052e525,transparent 75%),#ffffff02}
+.join-box .btn{margin-top:24px}
+.steps{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-size:11px;color:#a5a0b8;margin-top:22px}
+footer{text-align:center;border-top:1px solid #ffffff0c;padding:23px 0 28px}
+.warning{font-size:10px;line-height:1.8;color:#767b91;max-width:650px;margin:0 auto 18px}
+.credit{font-size:10px;letter-spacing:2px;color:#9295aa}
+.credit b{color:#f4c542}
+.reveal{animation:enter .8s ease both}
+@keyframes enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes breathe{50%{opacity:.55;transform:scale(1.12)}}
+@keyframes shine{0%,65%{transform:translateX(-150%)}100%{transform:translateX(150%)}}
+
+@media(max-width:700px){
+.wrap{padding:0 18px}
+nav{padding:15px 0}
+.brand{font-size:10px;letter-spacing:0}
+.avatar{width:36px;height:36px}
+.nav-btn{padding:8px 12px;font-size:10px}
+.hero{display:flex;flex-direction:column;gap:0;padding:30px 0 29px;text-align:center}
+.art{order:-1;padding:14px 0 35px;width:100%}
+.portrait{width:160px;height:160px;padding:5px;box-shadow:0 0 0 12px #a78bfa05,0 0 0 25px #a78bfa03}
+.art:before{width:190px;height:190px}
+.vip{font-size:9px;padding:6px 15px;bottom:-6px}
+.art-tag{right:calc(50% - 135px);top:9px;font-size:9px;padding:7px 10px}
+.badge{font-size:8px;padding:7px 11px;letter-spacing:1.1px}
+h1{font-size:clamp(37px,10.5vw,54px);letter-spacing:-1.5px;margin:17px 0 15px}
+.lead{font-size:12px;margin:0 auto 21px;max-width:360px;line-height:1.8}
+.hero .btn{width:100%;max-width:360px;padding:16px 12px;font-size:13px}
+.note{justify-content:center;gap:12px;font-size:9px;margin-top:15px}
+.strip{padding:18px 5px;border-radius:14px}
+.strip strong{font-size:14px}
+.strip small{font-size:9px}
+section{padding:38px 0}
+h2{font-size:26px}
+.sub{font-size:12px}
+.cards{grid-template-columns:1fr;gap:11px;margin-top:22px}
+.card{display:grid;grid-template-columns:40px 1fr;column-gap:13px;padding:18px}
+.icon{grid-row:span 2;width:38px;height:38px}
+h3{margin:0 0 5px;font-size:13px}
+.card p{font-size:11px}
+.join-box{padding:30px 17px;border-radius:19px}
+.join-box .btn{width:100%;font-size:12px}
+.steps{gap:12px;font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*:before,*:after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="wrap">
+
+<nav>
+  <div class="brand">
+    <img class="avatar" src="logo.jpg" alt="VIP CHANNEL EXPERT Logo">
+    <span>VIP CHANNEL <span class="gold">EXPERT</span></span>
+  </div>
+  <a class="nav-btn"
+     href="https://t.me/+W1z0Rlgs7QE0NDY1"
+     target="_blank"
+     rel="noopener noreferrer">Join ↗</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="reveal">
+    <div class="badge">
+      <span class="dot"></span>
+      YOUR VIP TELEGRAM DESTINATION
+    </div>
+
+    <h1>VIP CHANNEL<br><span class="gradient">EXPERT</span></h1>
+
+    <p class="lead">
+      Channel updates aur announcements ke liye Telegram par connect karo.
+      <strong style="color:#e1d7fa">VIP CHANNEL EXPERT</strong>
+      join karne ke liye neeche button tap karo.
+    </p>
+
+    <a class="btn"
+       href="https://t.me/+W1z0Rlgs7QE0NDY1"
+       target="_blank"
+       rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M21.8 3.3 18.4 20c-.3 1.2-.9 1.5-1.9.9l-5.2-3.8-2.5 2.4c-.3.3-.5.5-1 .5l.4-5.3L18 5.9c.4-.4-.1-.6-.6-.3L5.3 13.2.1 11.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.2c.9-.3 1.7.2 1.2 1.1Z"/>
+      </svg>
+      JOIN TELEGRAM CHANNEL <span>↗</span>
+    </a>
+
+    <div class="note">
+      <span>Open in Telegram</span>
+      <span>Channel Updates</span>
+      <span>18+ Only</span>
+    </div>
+  </div>
+
+  <div class="art">
+    <div class="art-tag">✦ VIP CHANNEL EXPERT</div>
+    <div class="portrait">
+      <img src="logo.jpg"
+           alt="VIP CHANNEL EXPERT Logo"
+           width="280"
+           height="280"
+           fetchpriority="high">
+      <div class="vip">♛ VIP EXPERT</div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div><strong>VIP</strong><small>CHANNEL ACCESS</small></div>
+  <div><strong>Telegram</strong><small>STAY CONNECTED</small></div>
+  <div><strong>Updates</strong><small>IN ONE PLACE</small></div>
+</div>
+
+<section>
+  <div class="center">
+    <div class="eyebrow">INSIDE THE CHANNEL</div>
+    <h2>Your Updates. <span class="gradient">One Place.</span></h2>
+    <p class="sub">Telegram par channel explore karo aur connected raho.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="icon">↗</div>
+      <h3>Channel Updates</h3>
+      <p>Channel mein share ki gayi posts aur announcements ek jagah dekho.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">♧</div>
+      <h3>Stay Connected</h3>
+      <p>Nayi posts ki notifications ke liye Telegram alerts on kar sakte ho.</p>
+    </article>
+
+    <article class="card">
+      <div class="icon">✦</div>
+      <h3>Easy Access</h3>
+      <p>Join button tap karo, invite kholo aur Telegram par channel dekho.</p>
+    </article>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="join-box">
+    <div class="eyebrow">TAKE THE NEXT STEP</div>
+    <h2>Join <span class="gradient">VIP CHANNEL EXPERT</span></h2>
+    <p class="sub">Aapka next click seedha Telegram invite par.</p>
+
+    <a class="btn"
+       href="https://t.me/+W1z0Rlgs7QE0NDY1"
+       target="_blank"
+       rel="noopener noreferrer">
+      OPEN TELEGRAM &amp; JOIN <span>↗</span>
+    </a>
+
+    <div class="steps">
+      <span>01 · Tap Button</span>
+      <span>02 · Open Telegram</span>
+      <span>03 · Join Channel</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="warning">
+    18+ only. Financial ya gaming-related content mein results guaranteed
+    nahi hain. Paisa lagane mein risk hota hai; apne area ke applicable
+    laws aur risks samajhkar decision lein.
+  </p>
+  <div class="credit">ADS BY <b>FLOX ADS</b></div>
+</footer>
+
+</div>
+</body>
+</html>
