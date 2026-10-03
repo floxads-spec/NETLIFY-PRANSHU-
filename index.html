@@ -6,18 +6,17 @@
 <meta name="theme-color" content="#080910">
 <title>VIP CHANNEL EXPERT</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#080910;color:#fff;font-family:'Poppins',sans-serif}
+body{margin:0;background:#080910;color:#fff;font-family:Poppins,sans-serif}
 a{-webkit-tap-highlight-color:transparent}
 .bg{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 15%,#733ae52b,transparent 50%),radial-gradient(ellipse at 90% 65%,#09c9ef20,transparent 50%)}
 .bg:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff04 1px,transparent 1px),linear-gradient(90deg,#ffffff04 1px,transparent 1px);background-size:48px 48px}
 .wrap{width:min(1080px,100%);margin:auto;padding:0 22px}
 nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 0;border-bottom:1px solid #ffffff0d}
 .brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.5px}
-.avatar{width:43px;height:43px;border-radius:50%;object-fit:cover;object-position:center;border:2px solid #a78bfa}
+.avatar{width:43px;height:43px;border-radius:50%;object-fit:cover;border:2px solid #a78bfa}
 .nav-btn{color:#d8c8ff;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #a78bfa40;border-radius:30px;padding:9px 15px;background:#a78bfa0b}
 .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:50px;align-items:center;padding:80px 0 65px}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #a78bfa35;border-radius:30px;color:#d1beff;background:#a78bfa0c;font-size:10px;font-weight:600;letter-spacing:1.6px}
@@ -27,16 +26,15 @@ h1{font-size:clamp(42px,6vw,73px);line-height:1.08;letter-spacing:-2.5px;margin:
 .gold{color:#f4c542}
 .lead{font-size:14px;color:#a7a9bc;line-height:1.85;max-width:450px;margin:0 0 26px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;padding:17px 25px;border-radius:14px;background:linear-gradient(110deg,#9162f5,#6146e5);color:#fff;text-decoration:none;font-size:14px;font-weight:700;box-shadow:0 10px 35px #8355e530;transition:transform .25s,box-shadow .25s}
-.btn svg{width:21px;height:21px;flex-shrink:0}
 .btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#ffffff25 50%,transparent 65%);transform:translateX(-150%);animation:shine 5s infinite}
 .btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px #8355e550}
-.btn:focus-visible,.nav-btn:focus-visible{outline:3px solid #c8b2ff;outline-offset:5px}
+a:focus-visible{outline:3px solid #c8b2ff;outline-offset:5px}
 .note{display:flex;gap:16px;flex-wrap:wrap;color:#9295aa;font-size:10px;margin-top:18px}
 .note span:before{content:"✓";color:#bda1ff;margin-right:5px}
 .art{position:relative;display:grid;place-items:center;padding:32px 0}
 .art:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:#8255e530;filter:blur(65px);animation:breathe 6s ease-in-out infinite}
 .portrait{width:280px;height:280px;border-radius:50%;padding:8px;border:1px solid #a78bfa60;background:#ffffff05;position:relative;animation:float 6s ease-in-out infinite;box-shadow:0 0 0 18px #a78bfa05,0 0 0 40px #a78bfa03}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;display:block}
+.portrait img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
 .vip{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#15121e;border:1px solid #f4c54255;color:#f4c542;white-space:nowrap;border-radius:30px;padding:9px 22px;font-size:12px;font-weight:700;letter-spacing:2px}
 .art-tag{position:absolute;right:0;top:35px;background:#12121e;border:1px solid #ffffff15;border-radius:12px;padding:11px 15px;font-size:11px;color:#ddd0ff;box-shadow:0 12px 30px #0005}
 .strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #ffffff10;border-radius:18px;background:#ffffff03;padding:22px 12px}
@@ -67,7 +65,6 @@ footer{text-align:center;border-top:1px solid #ffffff0c;padding:23px 0 28px}
 @keyframes float{50%{transform:translateY(-10px)}}
 @keyframes breathe{50%{opacity:.55;transform:scale(1.12)}}
 @keyframes shine{0%,65%{transform:translateX(-150%)}100%{transform:translateX(150%)}}
-
 @media(max-width:700px){
 .wrap{padding:0 18px}
 nav{padding:15px 0}
@@ -106,63 +103,42 @@ html{scroll-behavior:auto}
 }
 </style>
 </head>
-
 <body>
 <div class="bg" aria-hidden="true"></div>
 <div class="wrap">
-
 <nav>
   <div class="brand">
-    <img class="avatar" src="logo.jpg" alt="VIP CHANNEL EXPERT Logo">
+    <img class="avatar channel-photo" alt="VIP CHANNEL EXPERT Logo">
     <span>VIP CHANNEL <span class="gold">EXPERT</span></span>
   </div>
-  <a class="nav-btn"
-     href="https://t.me/+W1z0Rlgs7QE0NDY1"
-     target="_blank"
-     rel="noopener noreferrer">Join ↗</a>
+  <a class="nav-btn" href="https://t.me/+W1z0Rlgs7QE0NDY1"
+     target="_blank" rel="noopener noreferrer">Join ↗</a>
 </nav>
 
 <main>
 <header class="hero">
   <div class="reveal">
-    <div class="badge">
-      <span class="dot"></span>
-      YOUR VIP TELEGRAM DESTINATION
-    </div>
-
+    <div class="badge"><span class="dot"></span> YOUR VIP TELEGRAM DESTINATION</div>
     <h1>VIP CHANNEL<br><span class="gradient">EXPERT</span></h1>
-
     <p class="lead">
       Channel updates aur announcements ke liye Telegram par connect karo.
       <strong style="color:#e1d7fa">VIP CHANNEL EXPERT</strong>
       join karne ke liye neeche button tap karo.
     </p>
-
-    <a class="btn"
-       href="https://t.me/+W1z0Rlgs7QE0NDY1"
-       target="_blank"
-       rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M21.8 3.3 18.4 20c-.3 1.2-.9 1.5-1.9.9l-5.2-3.8-2.5 2.4c-.3.3-.5.5-1 .5l.4-5.3L18 5.9c.4-.4-.1-.6-.6-.3L5.3 13.2.1 11.6c-1.1-.3-1.1-1.1.2-1.6L20.6 2.2c.9-.3 1.7.2 1.2 1.1Z"/>
-      </svg>
-      JOIN TELEGRAM CHANNEL <span>↗</span>
+    <a class="btn" href="https://t.me/+W1z0Rlgs7QE0NDY1"
+       target="_blank" rel="noopener noreferrer">
+      ✈ JOIN TELEGRAM CHANNEL ↗
     </a>
-
     <div class="note">
       <span>Open in Telegram</span>
       <span>Channel Updates</span>
       <span>18+ Only</span>
     </div>
   </div>
-
   <div class="art">
     <div class="art-tag">✦ VIP CHANNEL EXPERT</div>
     <div class="portrait">
-      <img src="logo.jpg"
-           alt="VIP CHANNEL EXPERT Logo"
-           width="280"
-           height="280"
-           fetchpriority="high">
+      <img class="channel-photo" alt="VIP CHANNEL EXPERT Logo" width="280" height="280">
       <div class="vip">♛ VIP EXPERT</div>
     </div>
   </div>
@@ -180,20 +156,17 @@ html{scroll-behavior:auto}
     <h2>Your Updates. <span class="gradient">One Place.</span></h2>
     <p class="sub">Telegram par channel explore karo aur connected raho.</p>
   </div>
-
   <div class="cards">
     <article class="card">
       <div class="icon">↗</div>
       <h3>Channel Updates</h3>
       <p>Channel mein share ki gayi posts aur announcements ek jagah dekho.</p>
     </article>
-
     <article class="card">
       <div class="icon">♧</div>
       <h3>Stay Connected</h3>
       <p>Nayi posts ki notifications ke liye Telegram alerts on kar sakte ho.</p>
     </article>
-
     <article class="card">
       <div class="icon">✦</div>
       <h3>Easy Access</h3>
@@ -207,14 +180,8 @@ html{scroll-behavior:auto}
     <div class="eyebrow">TAKE THE NEXT STEP</div>
     <h2>Join <span class="gradient">VIP CHANNEL EXPERT</span></h2>
     <p class="sub">Aapka next click seedha Telegram invite par.</p>
-
-    <a class="btn"
-       href="https://t.me/+W1z0Rlgs7QE0NDY1"
-       target="_blank"
-       rel="noopener noreferrer">
-      OPEN TELEGRAM &amp; JOIN <span>↗</span>
-    </a>
-
+    <a class="btn" href="https://t.me/+W1z0Rlgs7QE0NDY1"
+       target="_blank" rel="noopener noreferrer">OPEN TELEGRAM &amp; JOIN ↗</a>
     <div class="steps">
       <span>01 · Tap Button</span>
       <span>02 · Open Telegram</span>
@@ -232,7 +199,13 @@ html{scroll-behavior:auto}
   </p>
   <div class="credit">ADS BY <b>FLOX ADS</b></div>
 </footer>
-
 </div>
+
+<script>
+const logoPhoto = "data:image/jpeg;base64,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";
+document.querySelectorAll(".channel-photo").forEach(function(image){
+  image.src = logoPhoto;
+});
+</script>
 </body>
 </html>
